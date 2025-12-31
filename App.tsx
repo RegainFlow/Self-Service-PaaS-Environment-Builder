@@ -29,7 +29,7 @@ const Header = ({ currentView, setView }: { currentView: ViewState, setView: (v:
         <Server className="text-black w-5 h-5" />
       </div>
       <h1 className="font-logo font-bold text-xl tracking-wide">
-        REGAIN<span className="text-primary">FLOW</span>
+        PaaS<span className="text-primary"> Builder</span>
       </h1>
     </div>
     <nav className="hidden md:flex items-center gap-1 text-sm font-medium text-gray-400">

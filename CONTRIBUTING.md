@@ -1,6 +1,6 @@
-# Contributing to RegainFlow Self-Service PaaS Environment Builder
+# Contributing to Self-Service PaaS Environment Builder
 
-Welcome to the RegainFlow project! This guide will help you understand the project structure, architecture, and how to contribute effectively as we scale.
+This guide will help you understand the project structure, architecture, and how to contribute effectively as we scale.
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ Welcome to the RegainFlow project! This guide will help you understand the proje
 
 ## Project Overview
 
-**RegainFlow** is a Self-Service PaaS Environment Builder designed to accelerate developer velocity. The platform integrates:
+**PaaS Builder** is a Self-Service PaaS Environment Builder designed to accelerate developer velocity. The platform integrates:
 
 - **GitOps-Driven**: Infrastructure as Code (IaC) source of truth
 - **Drift Detection**: Automated remediation of infrastructure drift
@@ -597,6 +597,6 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ---
 
-**Thank you for contributing to RegainFlow! 🚀**
+**Thank you for contributing to PaaS Builder! 🚀**
 
 Together, we're building the future of self-service infrastructure automation.

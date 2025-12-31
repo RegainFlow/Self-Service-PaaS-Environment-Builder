@@ -27,7 +27,7 @@ export const generateDeploymentPlan = async (userRequest: string): Promise<Deplo
   }
 
   const systemInstruction = `
-    You are a DevOps Engineering AI for RegainFlow. 
+    You are a DevOps Engineering AI for PaaS Builder. 
     Your job is to translate natural language requests into a structured PaaS deployment plan.
     The platform uses Terraform for infra, Ansible for config, and K8s for orchestration.
     
