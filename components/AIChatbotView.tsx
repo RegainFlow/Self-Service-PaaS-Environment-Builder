@@ -47,7 +47,7 @@ const AIChatbotView: React.FC<AIChatbotViewProps> = ({ onDeploy }) => {
         <div className="glass-card p-8 rounded-2xl border border-primary/20 neon-glow relative overflow-hidden">
           {/* Decorative background elements */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full filter blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-          
+
           <div className="relative z-10">
             <label className="block text-primary text-sm font-semibold mb-2 uppercase tracking-wider">
               Describe your requirements
@@ -59,15 +59,15 @@ const AIChatbotView: React.FC<AIChatbotViewProps> = ({ onDeploy }) => {
               onChange={(e) => setInput(e.target.value)}
               disabled={isLoading}
             />
-            
+
             <div className="mt-6 flex justify-end gap-4">
               <button
                 onClick={handleGenerate}
                 disabled={isLoading || !input.trim()}
                 className={`
                   flex items-center gap-2 px-8 py-3 rounded-lg font-bold transition-all
-                  ${isLoading 
-                    ? 'bg-primary/20 cursor-not-allowed text-primary' 
+                  ${isLoading
+                    ? 'bg-primary/20 cursor-not-allowed text-primary'
                     : 'bg-primary/10 text-primary border border-primary hover:bg-primary/20 hover:shadow-[0_0_20px_rgba(0,214,203,0.3)]'}
                 `}
               >
@@ -111,7 +111,7 @@ const AIChatbotView: React.FC<AIChatbotViewProps> = ({ onDeploy }) => {
             <div className="space-y-4">
               <div className="flex items-center gap-2 text-primary font-semibold border-b border-white/10 pb-2">
                 <Cpu className="w-5 h-5" />
-                <span>Configuration (Ansible/PXE)</span>
+                <span>Configuration (Ansible/Cloud-Init)</span>
               </div>
               <ul className="space-y-3">
                 {plan.configuration.map((item, i) => (

@@ -1,20 +1,10 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Self-Service PaaS Environment Builder
 
-# Run and deploy your AI Studio app
+**Description:** Automated environment provisioning system designed to accelerate developer velocity. Using a GitOps approach with Terraform and Ansible, developers can spin up ephemeral or persistent cloud environments in minutes rather than days. This solution standardizes cloud resource delivery across AWS, Azure, and GCP, featuring automated drift detection, cost controls, and seamless CI/CD integration for rapid iteration cycles.
 
-This contains everything you need to run your app locally.
+**Tags:**
+- Developer Productivity
+- Infrastructure as Code (IaC)
+- CI/CD Automation
 
-View your app in AI Studio: https://ai.studio/apps/drive/192rQjnb9SvSysfE5r_pYFEXF5xOxv0cg
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+**Primary Metric:** 10× Faster Environment Setup

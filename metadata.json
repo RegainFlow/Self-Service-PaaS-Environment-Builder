@@ -1,5 +1,5 @@
 {
   "name": "RegainFlow",
-  "description": "A PaaS-style automation platform using Terraform, Ansible, and Kubernetes to generate engineering environments via AI.",
+  "description": "A PaaS-style automation platform using Terraform, Ansible, and Kubernetes to generate development environments via AI.",
   "requestFramePermissions": []
 }

@@ -121,7 +121,7 @@ const EnvCard = ({ env }: { env: Environment }) => {
         </div>
         <div className="flex items-center gap-2 text-xs text-gray-400">
           <ShieldCheck className="w-3 h-3" />
-          <span>HighSide PXE: {env.status === EnvStatus.ACTIVE ? 'Complete' : 'Pending'}</span>
+          <span>Cloud Provisioning: {env.status === EnvStatus.ACTIVE ? 'Complete' : 'Pending'}</span>
         </div>
       </div>
 
@@ -221,9 +221,9 @@ export default function App() {
       { msg: "Initializing Terraform backend...", src: "Terraform", delay: 500 },
       { msg: "Plan generated. 14 resources to add.", src: "Terraform", delay: 1500 },
       { msg: "Provisioning AWS VPC resources...", src: "Terraform", delay: 2500 },
-      { msg: "Instances initialized. Waiting for PXE boot...", src: "PXE", delay: 4000 },
-      { msg: "HighSide Secure Bootloader active.", src: "PXE", delay: 5000 },
-      { msg: "OS Image streamed successfully.", src: "PXE", delay: 6000 },
+      { msg: "Instances initialized. Waiting for Cloud-Init...", src: "Cloud-Init", delay: 4000 },
+      { msg: "Cloud-Init Bootloader active.", src: "Cloud-Init", delay: 5000 },
+      { msg: "OS Image streamed successfully.", src: "Cloud-Init", delay: 6000 },
       { msg: "Ansible inventory updated.", src: "Ansible", delay: 7000 },
       { msg: "Running playbook: security-hardening.yml", src: "Ansible", delay: 8000 },
       { msg: "Environment configuration complete.", src: "System", delay: 9500, level: 'SUCCESS' },

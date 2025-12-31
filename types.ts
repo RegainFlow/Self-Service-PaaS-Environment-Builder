@@ -1,9 +1,10 @@
 export enum EnvStatus {
   PROVISIONING = 'PROVISIONING',
-  BOOTSTRAPPING = 'BOOTSTRAPPING', // PXE phase
+  BOOTSTRAPPING = 'BOOTSTRAPPING', // Cloud-Init phase
   CONFIGURING = 'CONFIGURING',     // Ansible phase
   ACTIVE = 'ACTIVE',
-  ERROR = 'ERROR'
+  ERROR = 'ERROR',
+  PAUSED = 'PAUSED'
 }
 
 export interface Environment {

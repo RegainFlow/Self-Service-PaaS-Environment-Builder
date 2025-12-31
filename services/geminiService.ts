@@ -46,15 +46,15 @@ export const generateDeploymentPlan = async (userRequest: string): Promise<Deplo
           properties: {
             name: { type: Type.STRING, description: "A technical name for the environment" },
             summary: { type: Type.STRING, description: "Short description of what will be built" },
-            infrastructure: { 
-              type: Type.ARRAY, 
+            infrastructure: {
+              type: Type.ARRAY,
               items: { type: Type.STRING },
               description: "List of Terraform resources to create"
             },
-            configuration: { 
-              type: Type.ARRAY, 
+            configuration: {
+              type: Type.ARRAY,
               items: { type: Type.STRING },
-              description: "List of Ansible tasks or PXE bootstrap steps"
+              description: "List of Ansible tasks or Cloud-Init bootstrap steps"
             }
           },
           required: ["name", "summary", "infrastructure", "configuration"]

@@ -21,14 +21,16 @@ Welcome to the RegainFlow project! This guide will help you understand the proje
 
 - **Infrastructure as Code (IaC)**: Terraform for cloud resource provisioning
 - **Configuration Management**: Ansible for automated configuration
-- **Secure Boot**: HighSide PXE for secure OS deployment
+- **Secure Boot**: Cloud-Init for secure OS deployment
 - **AI-Powered Orchestration**: Gemini AI for intelligent deployment planning
 
-### Core Features
+### 2. Deployment Architecture
+- **Inception Server**: Runs the Terraform/Ansible control plane
+- **Target Nodes**: Ephemeral VMs provisioned via cloud APIs
+- **Bootstrap**: Cloud-Init injection for initial configuration
 
-- 🚀 **Automated Environment Provisioning**: One-click deployment of complete infrastructure stacks
-- 🔧 **Multi-Cloud Support**: AWS, GCP, Azure resource management
-- 🛡️ **Security-First**: HighSide PXE secure boot and hardened configurations
+### 3. Key Principles
+- 🛡️ **Security-First**: Automated security hardening and compliance checks
 - 📊 **Real-Time Monitoring**: Live deployment logs and status tracking
 - 🤖 **AI-Assisted Planning**: Gemini-powered deployment plan generation
 
