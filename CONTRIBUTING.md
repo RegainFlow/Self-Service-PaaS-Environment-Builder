@@ -17,21 +17,22 @@ Welcome to the RegainFlow project! This guide will help you understand the proje
 
 ## Project Overview
 
-**RegainFlow** is a Self-Service PaaS Environment Builder that enables automated infrastructure provisioning and configuration management. The platform integrates:
+**RegainFlow** is a Self-Service PaaS Environment Builder designed to accelerate developer velocity. The platform integrates:
 
-- **Infrastructure as Code (IaC)**: Terraform for cloud resource provisioning
-- **Configuration Management**: Ansible for automated configuration
-- **Secure Boot**: Cloud-Init for secure OS deployment
+- **GitOps-Driven**: Infrastructure as Code (IaC) source of truth
+- **Drift Detection**: Automated remediation of infrastructure drift
+- **Cost Controls**: Real-time cost estimation and budget enforcement
 - **AI-Powered Orchestration**: Gemini AI for intelligent deployment planning
 
 ### 2. Deployment Architecture
-- **Inception Server**: Runs the Terraform/Ansible control plane
-- **Target Nodes**: Ephemeral VMs provisioned via cloud APIs
-- **Bootstrap**: Cloud-Init injection for initial configuration
+- **Control Plane**: Runs the Terraform/Ansible orchestration
+- **Provisioned Environments**: Ephemeral or persistent cloud resources
+- **Bootstrap**: Cloud-Init injection for secure initial configuration
 
 ### 3. Key Principles
+- 🔄 **GitOps-Driven**: All infrastructure changes are version-controlled and automated
+- 💰 **Cost-Aware**: Proactive cost estimation and budget guardrails
 - 🛡️ **Security-First**: Automated security hardening and compliance checks
-- 📊 **Real-Time Monitoring**: Live deployment logs and status tracking
 - 🤖 **AI-Assisted Planning**: Gemini-powered deployment plan generation
 
 ### Tech Stack
@@ -540,6 +541,7 @@ Add screenshots for UI changes
 - ✅ Environment dashboard
 - ✅ AI-powered provisioning
 - ✅ Real-time deployment logs
+- ✅ Basic Drift Detection
 
 ### Phase 2: Feature Expansion
 - [ ] Multi-cloud provider support (AWS, GCP, Azure)
